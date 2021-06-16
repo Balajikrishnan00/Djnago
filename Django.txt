@@ -1,1 +1,14 @@
 this is my learning of django
+
+
+# 1) create project:
+	django-admin startproject 'projectname'
+	ex: django-admin startproject first_Project
+# 2) runserver:
+	window : python manage.py runserver
+	linux  : python3 manage.py runserver
+
+# 3) create app
+	python manage.py startapp 'appname'
+	ex:python manage.py startapp firstapp
+
