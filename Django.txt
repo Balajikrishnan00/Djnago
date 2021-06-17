@@ -12,3 +12,50 @@ this is my learning of django
 	python manage.py startapp 'appname'
 	ex:python manage.py startapp firstapp
 
+
+# setting.py
+	add firstapp name in installed app
+
+# views.py
+	
+	1) function based views
+	2) class based views
+
+	1.function based views
+	
+	from django.http import HttpResponse 
+		
+		Ex: def home(request):
+			mgs='<h1> welcome to Django.</h1>'
+			return HttpResponse(mgs)
+
+# urls.py 
+	go to project urls.py
+	
+	* from firstapp import views
+	
+	add-path
+	
+	path('request/',views.home())
+
+
+
+# third_project
+1)	create project : django-admin startproject third_project
+
+2) create App : python manage.py startapp TestApp
+
+3) add app name in project settings 
+
+4) views.py 
+	from django.http import HttpResponse
+
+5) create url.py in application level file  for skip maintance issue and code resuablity
+	
+	make path() for views   
+
+6) project level urls.py
+	import include
+	
+	make path() for app level url.py 
+ 
